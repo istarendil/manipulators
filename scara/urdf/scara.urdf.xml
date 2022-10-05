@@ -79,6 +79,60 @@
        </inertial>
     </link>
 
+    <link name="gp0">
+    	<visual>
+    	    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    	    <geometry>
+		    <mesh filename="../meshes/visual/gp0.dae" scale="1.0 1.0 1.0" />
+    	    </geometry>
+    	    <material name="silver">
+    	    	<color rgba="0.8 0.8 0.8 1.0"/>
+    	    </material>
+    	</visual>
+    	<inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1"/>
+            <inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+       </inertial>
+    </link>
+
+    <link name="gp1a">
+    	<visual>
+    	    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    	    <geometry>
+		    <mesh filename="../meshes/visual/gp1.dae" scale="1.0 1.0 1.0" />
+    	    </geometry>
+    	    <material name="silver">
+    	    	<color rgba="0.8 0.8 0.8 1.0"/>
+    	    </material>
+    	</visual>
+    	<inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1"/>
+            <inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+       </inertial>
+    </link>
+
+    <link name="gp1b">
+    	<visual>
+    	    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    	    <geometry>
+		    <mesh filename="../meshes/visual/gp1.dae" scale="1.0 1.0 1.0" />
+    	    </geometry>
+    	    <material name="silver">
+    	    	<color rgba="0.8 0.8 0.8 1.0"/>
+    	    </material>
+    	</visual>
+    	<inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1"/>
+            <inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+       </inertial>
+    </link>
+
+
+
+
     <!-- Joints -->
     <joint name="q1" type="revolute">
     	<parent link="lk0"/>
@@ -93,7 +147,7 @@
     	<child link="lk2"/>
     	<axis xyz="0.0 0.0 1.0"/>
     	<limit lower="-3.1416" upper="3.1416" effort="1.0" velocity="1.0"/>
-    	<origin xyz="0.3 0.0 0.0" rpy="0.0 0.0 0.0" />
+    	<origin xyz="0.3 0.0 0.04" rpy="0.0 0.0 0.0" />
     </joint>
 
     <joint name="q3" type="prismatic">
@@ -109,8 +163,36 @@
     	<child link="lk3"/>
     	<axis xyz="0.0 0.0 1.0"/>
     	<limit lower="-3.1416" upper="3.1416" effort="1.0" velocity="1.0"/>
-    	<origin xyz="0.0 0.0 0.04" rpy="0.0 0.0 0.0" />
+    	<origin xyz="0.0 0.0 0.03" rpy="0.0 0.0 0.0" />
     </joint>
+
+    <joint name="q5" type="fixed">
+    	<parent link="lk3"/>
+    	<child link="gp0"/>
+    	<origin xyz="0.0 0.0 0.03" rpy="0.0 0.0 0.0" />
+    </joint>
+
+    <joint name="q6" type="prismatic">
+    	<parent link="gp0"/>
+    	<child link="gp1a"/>
+    	<axis xyz="0.0 0.0 1.0"/>
+    	<limit lower="0.0" upper="0.03" effort="1.0" velocity="1.0"/>
+    	<origin xyz="0.0 0.0 0.01" rpy="1.5708 -1.5708 3.1416" />
+    </joint>
+
+    <joint name="q7" type="prismatic">
+    	<parent link="gp0"/>
+    	<child link="gp1b"/>
+    	<axis xyz="0.0 0.0 1.0"/>
+    	<limit lower="0.0" upper="0.03" effort="1.0" velocity="1.0"/>
+    	<origin xyz="0.0 0.0 0.01" rpy="-1.5708 -1.5708 3.1416" />
+	<mimic joint="q6" />
+    </joint>
+
+
+
+
+
 
 </robot>
 
