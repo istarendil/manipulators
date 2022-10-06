@@ -1,8 +1,8 @@
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
   <asset>
     <contributor/>
-    <created>2022-10-05T11:39:43.236178</created>
-    <modified>2022-10-05T11:39:43.236181</modified>
+    <created>2022-10-06T14:49:48.149159</created>
+    <modified>2022-10-06T14:49:48.149172</modified>
     <unit name="meter" meter="1.0"/>
     <up_axis>Z_UP</up_axis>
   </asset>
