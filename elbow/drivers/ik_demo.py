@@ -1,5 +1,5 @@
 import pybullet as pb
-from solver.ik_solver import Ik_solver
+from solver.solver import Solver
 import pybullet_data
 import numpy as np
 
@@ -20,8 +20,8 @@ elbow = pb.loadURDF('urdf/elbow.urdf.xml', basePosition=[-0.4, 0.0, 0.625], useF
 # Inverse kinematics
 o = (0.4, -0.15, 0.3)
 rpy = (0.0, np.pi/2, np.pi/4)
-my_solver = Ik_solver(0.17, 0.25, 0.23, 0.16)
-q = my_solver.solve(o, rpy, -1)
+my_solver = Solver(0.17, 0.25, 0.23, 0.16)
+q = my_solver.solve_ik(o, rpy, -1)
 print('q: ', q)
 
 

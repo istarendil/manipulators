@@ -1,14 +1,14 @@
 import numpy as np
 from numpy import sin, cos 
 
-class Ik_solver:
+class Solver:
     def __init__(self, d1, a2, d4, d6):
         self._d1 = d1
         self._a2 = a2
         self._d4 = d4
         self._d6 = d6
         
-    def solve(self, o, rpy, conf=1):
+    def solve_ik(self, o, rpy, conf=1):
         rt = self._rpy2r(rpy)
         xc, yc, zc = self._wrist_center(o, rt)
         q1, q2, q3 = self._body_ik(xc, yc, zc, conf)
