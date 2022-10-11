@@ -13,7 +13,7 @@ pb.setRealTimeSimulation(0)
 pb.setAdditionalSearchPath(pybullet_data.getDataPath())
 floor = pb.loadURDF('plane.urdf')
 table = pb.loadURDF('table/table.urdf')
-robot = pb.loadURDF('urdf/scara.urdf.xml', basePosition=[0.0, 0.0, 0.62], useFixedBase=1)
+robot = pb.loadURDF('../urdf/scara.urdf.xml', basePosition=[0.0, 0.0, 0.62], useFixedBase=1)
 
 # End program
 input('Press Enter to stop...')
