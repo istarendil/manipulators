@@ -1,7 +1,7 @@
 import numpy as np
 import pybullet as pb
 import pybullet_data
-from Planner.planner import Planner
+from planner.planner import Planner
 import time
 
 # Make an instance of a physic client
@@ -14,14 +14,14 @@ pb.setRealTimeSimulation(0)
 # Charge objects
 pb.setAdditionalSearchPath(pybullet_data.getDataPath())
 floor = pb.loadURDF('plane.urdf')
-robot = pb.loadURDF('URDF/scara.urdf', useFixedBase=1)
+robot = pb.loadURDF('../urdf/scara.urdf.xml', useFixedBase=1)
 
 # Simulation parameters
 simTime = 3 
 dt = 0.01
 
-q0 = np.array([0, 0, 0, 0])
-qf = np.array([np.pi/4, np.pi/4, 0.3, 0])
+q0 = np.array([0, 0, 0.0, 0])
+qf = np.array([np.pi/4, np.pi/4, 0.1, 0])
 
 v0 = np.array([0, 0, 0, 0])
 vf = np.array([0, 0, 0, 0])
