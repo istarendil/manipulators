@@ -5,12 +5,16 @@ class Planner:
     def __init__(self):
         pass
 
-    def jTraj3(self, tf, dt, q0, qf, v0, vf):
+    def plan_j3(self, tf, dt, q0, qf, v0, vf):
+        q0 = np.array(q0)
+        qf = np.array(qf)
+        v0 = np.array(v0)
+        vf = np.array(vf)
         
         # Time vector
         t = np.arange(0, tf+dt, dt)
 
-        # Polynomia coefficients
+        # Polynomial coefficients
         C0 = q0
         C1 = v0
         C2 = (3*(qf - q0)/tf**2) - ((vf + 2*v0)/tf)
@@ -23,7 +27,7 @@ class Planner:
 
         return a, v, q
 
-    def cTrajLine(self, tf, dt, o0, of, r0, rf):
+    def plan_line(self, tf, dt, o0, of, r0, rf):
         dt = int(tf/dt)
 
         # Auxiliar vector coefficients
