@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class Planner:
     def __init__(self):
         pass
@@ -27,14 +26,23 @@ class Planner:
 
         return a, v, q
 
-    def plan_line(self, tf, dt, o0, of, r0, rf):
+    def plan_line(self, tf, dt, p0, pf):
         dt = int(tf/dt)
+
+        # Position and orientation
+        o0 = np.array(p0[:3])
+        of = np.array(pf[:3])
+        a0 = np.array(np.deg2rad(p0[3]))
+        af = np.array(np.deg2rad(pf[3]))
+
+        print(o0, of)
+        print(a0, af)
 
         # Auxiliar vector coefficients
         v = of - o0
         
         # Coordinates
-        a = np.linspace(r0, rf, dt)
+        a = np.linspace(a0, af, dt)
         x = np.linspace(o0[0], of[0], dt)
 
         t = (x - o0[0])/ v[0]
