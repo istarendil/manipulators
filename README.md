@@ -18,7 +18,7 @@ This repository contains the code related to the **"Modeling and control of robo
 - Simulation scripts
 - CAD files in [FreeCad](https://www.freecadweb.org/) format <br>
 ![2022-10-31_13-57-17_AdobeExpress](https://user-images.githubusercontent.com/107052856/199100101-1cababaf-9103-4fdc-8294-5f9c44569ac0.gif)
-![videoplayback_AdobeExpress](https://user-images.githubusercontent.com/107052856/199100621-44db1fd3-5e2c-4b89-8b7e-ad8c024bcd9d.gif)
+![ezgif-2-ad0853bce6](https://github.com/istarendil/manipulators/assets/107052856/9f1c690b-dcd7-4168-a991-ea367487c325)
 ![output_page-0001](https://user-images.githubusercontent.com/107052856/199103282-c0a121b3-920c-4775-8431-27d99d2e0f1f.jpg)
 
 # Tools
@@ -29,5 +29,6 @@ This repository contains the code related to the **"Modeling and control of robo
 |Numpy|1.23|
 
 # Demo
-- 6 DoF Elbow robot [trajectory generation](https://www.youtube.com/watch?v=byPdZVqNF7Y&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=11) without considering the collision meshes
-- 6 DoF Elbow robot [trajectory generation](https://www.youtube.com/watch?v=Ua7ChVYoCIc&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=12) considering the collision meshes
+- 6 DoF Elbow robot [Elbow_trajectory](https://www.youtube.com/watch?v=byPdZVqNF7Y&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=11) without considering the collision meshes
+- 6 DoF Elbow robot [Elbow_collision](https://www.youtube.com/watch?v=Ua7ChVYoCIc&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=12) considering the collision meshes
+- 4 DoF Scara robot [Scara_P&P](https://www.youtube.com/watch?v=Ua7ChVYoCIc&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=12) during a pick & place application
