@@ -17,7 +17,8 @@ This repository contains the code related to the **"Modeling and control of robo
 - Third order trajectory generator
 - Simulation scripts
 - CAD files in [FreeCad](https://www.freecadweb.org/) format <br>
-![2022-10-31_13-57-17_AdobeExpress](https://user-images.githubusercontent.com/107052856/199100101-1cababaf-9103-4fdc-8294-5f9c44569ac0.gif)
+
+![videoplayback_AdobeExpress](https://user-images.githubusercontent.com/107052856/199100621-44db1fd3-5e2c-4b89-8b7e-ad8c024bcd9d.gif)
 ![ezgif-2-ad0853bce6](https://github.com/istarendil/manipulators/assets/107052856/9f1c690b-dcd7-4168-a991-ea367487c325)
 ![output_page-0001](https://user-images.githubusercontent.com/107052856/199103282-c0a121b3-920c-4775-8431-27d99d2e0f1f.jpg)
 
