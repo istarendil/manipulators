@@ -32,4 +32,4 @@ This repository contains the code related to the **"Modeling and control of robo
 # Demo
 - 6 DoF Elbow robot [Elbow_trajectory](https://www.youtube.com/watch?v=byPdZVqNF7Y&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=11) without considering the collision meshes
 - 6 DoF Elbow robot [Elbow_collision](https://www.youtube.com/watch?v=Ua7ChVYoCIc&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=12) considering the collision meshes
-- 4 DoF Scara robot [Scara_P&P](https://www.youtube.com/watch?v=Ua7ChVYoCIc&list=PLQBwkbxMqU0CwwgrcaWHP4ouFjho0Iy4H&index=12) during a pick & place application
+- 4 DoF Scara robot [Scara_P&P](https://youtu.be/VX4Uf92NGkc?si=_Ugo5zqfH_W6do_c) during a pick & place application
